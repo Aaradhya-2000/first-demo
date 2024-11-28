@@ -1,0 +1,82 @@
+/* Container for graphs and data */
+.graphs-data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #f4f7fc; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Graph Section Styling */
+.graph-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #001f3f; /* Dark blue border */
+}
+
+.graph-section h2 {
+    color: #001f3f; /* Dark blue */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.graph-placeholder {
+    background-color: #e9ecef; /* Light grey placeholder */
+    border-radius: 5px;
+    padding: 40px;
+    color: #6c757d; /* Grey text */
+    font-size: 1rem;
+}
+
+/* Data Section Styling */
+.data-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #001f3f; /* Dark blue border */
+}
+
+.data-section h2 {
+    color: #001f3f;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.data-section ul {
+    list-style: none;
+    padding: 0;
+    color: #333; /* Dark text */
+}
+
+.data-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.data-section ul li strong {
+    color: #007bff; /* Accent color */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .graphs-data-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .graph-section,
+    .data-section {
+        width: 90%;
+    }
+}
